@@ -6,7 +6,7 @@ setuptools.setup(
     version='0.0.1',
     author="Chris Dunne",
     author_email="contact@chrisdunne.net",
-    description="A package for querying log files for evidence of compromise, by passing a CVE as a parameter.",
+    description="A package for querying log files for evidence of compromise.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/chrisdunne/qlog",
@@ -17,7 +17,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     entry_points = {
-        'console_scripts': ['qlog=src.qlog:cli'],
+        'console_scripts': ['qlog=src.qlog:main'],
     },
-    install_requires  = ["os"],
+    install_requires  = ["os", "re", "argparse", "json"],
  )
