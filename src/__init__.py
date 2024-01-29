@@ -1,1 +1,1 @@
-from .qlog import *
+from .qlogs import *

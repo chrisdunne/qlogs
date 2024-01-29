@@ -1,2 +1,2 @@
-# qlog - search for evidence of compromise
+# qlogs - search for evidence of compromise
 

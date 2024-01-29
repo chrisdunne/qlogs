@@ -56,7 +56,7 @@ def lookup(cve, directory):
 
 
 def main():
-    parser = argparse.ArgumentParser(prog="qlog", description="Pass in a CVE value as a query parameter and qlog will search your log files for evidence of compromise.", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser = argparse.ArgumentParser(prog="qlogs", description="Pass in a CVE value as a query parameter and qlogs will search your log files for evidence of compromise.", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument("-q", "--query", help="Query String")
     parser.add_argument("-c", "--cve", help="CVE Record")
     parser.add_argument("-d", "--directory", help="Directory String")
