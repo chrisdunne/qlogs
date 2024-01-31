@@ -3,7 +3,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 setuptools.setup(
     name='qlogs',  
-    version='0.0.1',
+    version='0.0.7',
     author="Chris Dunne",
     author_email="contact@chrisdunne.net",
     description="A package for querying log files for evidence of compromise.",
@@ -20,4 +20,5 @@ setuptools.setup(
         'console_scripts': ['qlogs=src.qlogs:main'],
     },
     install_requires  = [],
+    include_package_data=True,
  )
